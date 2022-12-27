@@ -1,0 +1,506 @@
+# baseURI: http://example.org/sl
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2002/07/owl
+# imports: http://www.w3.org/2003/01/geo/wgs84_pos
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/ns/lemon/lexicog
+# imports: http://www.w3.org/ns/lemon/lime
+# imports: http://www.w3.org/ns/lemon/ontolex
+# imports: http://www.w3.org/ns/lemon/synsem
+# imports: http://www.w3.org/ns/lemon/vartrans
+# prefix: sl
+
+@prefix dc: <http://purl.org/dc/terms/#> .
+@prefix decomp: <https://www.w3.org/ns/lemon/decomp#> .
+@prefix dgs: <http://example.org/dgs#> .
+@prefix dts: <http://example.org/dts#> .
+@prefix frac: <http://example.org/frac#> .
+@prefix gsl: <http://example.org/gsl#> .
+@prefix ili: <http://ili.globalwordnet.org/ili#> .
+@prefix lexicog: <http://www.w3.org/ns/lemon/lexicog#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lsf: <http://example.org/lsf#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sl: <http://example.org/sl#> .
+@prefix synsem: <http://www.w3.org/ns/lemon/synsem#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix wn: <https://globalwordnet.github.io/schemas/wn#> .
+@prefix wnid: <https://en-word.net/id/> .
+@prefix wnlemma: <https://en-word.net/lemma/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dgs:Corpus_dgskorpus_stu_12_Freie_Konversation
+  rdf:type frac:Corpus ;
+  <http://purl.org/dc/elements/1.1/source> "https://www.sign-lang.uni-hamburg.de/meinedgs/html/1182062_de.html" ;
+  rdfs:label "\"dgskorpus_stu_12: Freie Konversation\""@de ;
+.
+dgs:Form_15584
+  rdf:type ontolex:Form ;
+  sl:hasGloss "\"EXPLOSION1^\""@en ;
+  sl:hasTranslationInSpokenLanguage "\"Explosion, platzen, Knall!"@de ;
+  sl:hasTranslationInSpokenLanguage "\"explosion, bang, burst\""@en ;
+  sl:hasTranslationInSpokenLanguage "\"έκρηξη\""@el ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/glex/filmegr/g15584.mp4"^^rdf:HTML ;
+  rdfs:label "\"explosion, burst\""@en ;
+  ontolex:representation "\"HamNoSys-10040\"" ;
+.
+dgs:GLOSS_13990
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"PROTECTION1A^\""@en ;
+  rdfs:label "\"SCHUTZ1A^\""@de ;
+.
+dgs:GLOSS_13990-2966
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"PROTECTION1A\""@en ;
+  rdfs:label "\"SCHUTZ1A\""@de ;
+.
+dgs:GLOSS_15584
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"EXPLOSION1^\""@de ;
+  rdfs:label "\"EXPLOSION1^\""@en ;
+.
+dgs:GLOSS_15584-10040
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"EXPLOSION1\""@de ;
+  rdfs:label "\"EXPLOSION1\""@en ;
+.
+dgs:GLOSS_15584-5466
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"BOMB1\""@en ;
+  rdfs:label "\"BOMBE1\""@de ;
+.
+dgs:GLOSS_15584-69888
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"BANG3\""@en ;
+  rdfs:label "\"KNALL3\""@de ;
+.
+dgs:GLOSS_DS-688
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"PROTEGER\""@fr ;
+  rdfs:label "\"SCHUTZ1A^\""@de ;
+  rdfs:label "\"protect(v)#1\""@en ;
+  rdfs:label "\"ΠΡΟΣΤΑΤΕΥΩ\""@el ;
+.
+dgs:LexicalEntry_13990-2966
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"Schutz, schützen, geschützt\""@de ;
+  rdfs:label "\"protection\""@en ;
+  ontolex:evokes dgs:dicta-sign-688-v ;
+  ontolex:evokes wnid:omw-00817680-n ;
+.
+dgs:LexicalEntry_15584-10040
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"explosion\""@en ;
+  ontolex:evokes wnid:omw-00377364-n ;
+  ontolex:lexicalForm dgs:Form_15584 ;
+  ontolex:sense dgs:LexicalSense_15584-10040 ;
+.
+dgs:LexicalEntry_15584-10040_1
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"burst\""@en ;
+  ontolex:evokes wnid:omw-00377364-n ;
+  ontolex:lexicalForm dgs:Form_15584 ;
+  ontolex:sense dgs:LexicalSense_15584-10040 ;
+.
+dgs:LexicalEntry_15584-5466
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"bomb\""@en ;
+  ontolex:evokes wnid:omw-01131902-v ;
+  ontolex:lexicalForm dgs:Form_15584 ;
+.
+dgs:LexicalEntry_15584-69888
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"bang\""@en ;
+  ontolex:evokes wnid:omw-00377364-n ;
+  ontolex:lexicalForm dgs:Form_15584 ;
+.
+dgs:LexicalSense_13990-2966
+  rdf:type ontolex:LexicalSense ;
+  rdfs:label "\"Schutz\""@de ;
+  rdfs:label "\"protection\""@en ;
+  ontolex:isLexicalizedSenseOf dgs:dicta-sign-688-v ;
+  ontolex:isLexicalizedSenseOf wnid:omw-00817680-n ;
+  ontolex:isSenseOf dgs:LexicalEntry_13990-2966 ;
+.
+dgs:LexicalSense_15584-10040
+  rdf:type ontolex:LexicalSense ;
+  sl:hasGloss "EXPLOSION1"@en ;
+  rdfs:label "\"explosion, burst\""@en ;
+  ontolex:isLexicalizedSenseOf wnid:omw-00377364-n ;
+  ontolex:isSenseOf dgs:LexicalEntry_15584-10040 ;
+  vartrans:translation gsl:LexicalSense_1050 ;
+.
+dgs:LexicalSense_15584-69888
+  rdf:type ontolex:LexicalSense ;
+  sl:hasGloss "BANG3"@en ;
+  sl:hasGloss "KNALL3"@de ;
+  rdfs:label "\"Knall\""@de ;
+  rdfs:label "\"bang\""@en ;
+  ontolex:isLexicalizedSenseOf wnid:omw-00377364-n ;
+  ontolex:isSenseOf dgs:LexicalEntry_15584-69888 ;
+.
+<http://example.org/dgs#SignVideos_40085921.mp4>
+  rdf:type sl:SignVideos ;
+  dgs:hasGLOSS dgs:GLOSS_13990 ;
+  dgs:hasGLOSS dgs:GLOSS_13990-2966 ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/korpusdict/clips/4008592_1.mp4"^^rdf:HTML ;
+  rdfs:label "\"Videos representing a sign\"" ;
+.
+<http://example.org/dgs#SignVideos_bsl-688.mp4>
+  rdf:type sl:SignVideos ;
+  dgs:hasGLOSS dgs:GLOSS_DS-688 ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/dicta-sign/portal/concepts/bsl/688.mp4"^^rdf:HTML ;
+  rdfs:label "\"Videos representing a sign\"" ;
+.
+<http://example.org/dgs#SignVideos_dgs-688.mp4>
+  rdf:type sl:SignVideos ;
+  dgs:hasGLOSS dgs:GLOSS_13990-2966 ;
+  dgs:hasGLOSS dgs:GLOSS_DS-688 ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/dicta-sign/portal/concepts/dgs/688.mp4"^^rdf:HTML ;
+  rdfs:label "\"Videos representing a sign\"" ;
+.
+<http://example.org/dgs#SignVideos_galex-g13990.mp4>
+  rdf:type sl:SignVideos ;
+  dgs:hasGLOSS dgs:GLOSS_13990-2966 ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/galex/filmekl/g13990.mp4"^^rdf:HTML ;
+  rdfs:label "\"Videos representing a sign\"" ;
+.
+<http://example.org/dgs#SignVideos_gsl-688.mp4>
+  rdf:type sl:SignVideos ;
+  dgs:hasGLOSS dgs:GLOSS_DS-688 ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/dicta-sign/portal/concepts/lsf/688.mp4"^^rdf:HTML ;
+  rdfs:label "\"Videos representing a sign\"" ;
+.
+dgs:Subtype
+  rdf:type owl:Class ;
+  rdfs:label "\"DGS SUb-Type, having a lexical meaning, associated with a DGS sign\""@en ;
+  rdfs:subClassOf dgs:Type ;
+.
+dgs:Subtype_13990-2966
+  rdf:type dgs:Subtype ;
+  dgs:hasGLOSS dgs:GLOSS_13990-2966 ;
+  dgs:hasOMW-Link wnid:omw-00817680-n ;
+  dgs:hasVideo <http://example.org/dgs#SignVideos_40085921.mp4> ;
+  dgs:hasVideo <http://example.org/dgs#SignVideos_dgs-688.mp4> ;
+  rdfs:label "\"Schutz\""@de ;
+  rdfs:label "\"protection\""@en ;
+.
+dgs:Subtype_15584-10040
+  rdf:type dgs:Subtype ;
+  dgs:hasGLOSS dgs:GLOSS_15584-10040 ;
+  dgs:hasOMW-Link wnid:omw-00377364-n ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/glex/filmegr/g15584.mp4"^^rdf:HTML ;
+  rdfs:label "\"Explosion\""@de ;
+  rdfs:label "\"explosion\""@en ;
+.
+dgs:Subtype_15584-5466
+  rdf:type dgs:Subtype ;
+  dgs:hasGLOSS dgs:GLOSS_15584-5466 ;
+  dgs:hasOMW-Link wnid:omw-01131902-v ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/glex/filmegr/g15584.mp4"^^rdf:HTML ;
+  rdfs:label "\"bomb\""@en ;
+  rdfs:label "\"bomben\""@de ;
+.
+dgs:Subtype_15584-69888
+  rdf:type dgs:Subtype ;
+  dgs:hasGLOSS dgs:GLOSS_15584-69888 ;
+  dgs:hasOMW-Link wnid:omw-07376257-n ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/glex/filmegr/g15584.mp4"^^rdf:HTML ;
+  rdfs:label "\"Knall\""@de ;
+  rdfs:label "\"bang\""@en ;
+.
+dgs:Type
+  rdf:type owl:Class ;
+  rdfs:label "\"DGS Type associated with a DGS sign\""@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+dgs:Type_13990
+  rdf:type dgs:Type ;
+  dgs:hasGLOSS dgs:GLOSS_13990 ;
+  dgs:hasSubType dgs:Subtype_13990-2966 ;
+  dgs:hasVideo <http://example.org/dgs#SignVideos_40085921.mp4> ;
+  dgs:hasVideo <http://example.org/dgs#SignVideos_dgs-688.mp4> ;
+  rdfs:label "\"Schutz\""@de ;
+  rdfs:label "\"protection\""@en ;
+.
+dgs:Type_15584
+  rdf:type dgs:Type ;
+  dgs:hasGLOSS dgs:GLOSS_15584 ;
+  dgs:hasSubType dgs:Subtype_15584-10040 ;
+  dgs:hasSubType dgs:Subtype_15584-5466 ;
+  dgs:hasSubType dgs:Subtype_15584-69888 ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/glex/filmegr/g15584.mp4"^^rdf:HTML ;
+  rdfs:label "\"Explosion\""@de ;
+  rdfs:label "\"explosion\""@en ;
+.
+dgs:dicta-sign-688-v
+  rdf:type ontolex:LexicalConcept ;
+  dgs:hasGLOSS dgs:GLOSS_DS-688 ;
+  rdfs:label "\"protect\""@en ;
+  rdfs:label "\"protéger\""@fr ;
+  rdfs:label "\"schützen\""@de ;
+  rdfs:label "\"ΠΡΟΣΤΑΤΕΥΩ\""@el ;
+  skos:inScheme sl:ConceptSet_Dicta-Sign ;
+.
+dgs:hasGLOSS
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dgs:Type ;
+  rdfs:domain sl:SignVideos ;
+  rdfs:label "\"Associating a GLOSS object to a type\""@en ;
+  rdfs:range sl:GLOSS ;
+.
+dgs:hasOMW-Link
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dgs:Subtype ;
+  rdfs:label "\"Linking a type to a Open Multilingual WordNet Synset (pr more than one\""@en ;
+  rdfs:range skos:Concept ;
+.
+dgs:hasSubType
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dgs:Type ;
+  rdfs:domain ontolex:Form ;
+  rdfs:label "\"A DGS Subtype\""@en ;
+  rdfs:range dgs:Subtype ;
+.
+dgs:hasVideo
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "\"Associating a GLOSS object to a type\""@en ;
+.
+dts:Form_1_2162
+  rdf:type ontolex:Form ;
+  dgs:hasVideo <http://example.org/dts#SignVideos_dts-t_2162.mp4> ;
+  sl:hasGloss "\"FORSVARE\""@en ;
+  sl:hasTranslationInSpokenLanguage "\"forsvare, beskytte,  forsvarer, værne, værn, beskyttelse\""@da ;
+  sl:hasTranslationInSpokenLanguage "\"geschützt, Schutz, schützen\""@de ;
+  sl:hasTranslationInSpokenLanguage "\"protection\""@en ;
+  sl:hasTranslationInSpokenLanguage "\"protection\""@fr ;
+  sl:hasTranslationInSpokenLanguage "\"προστασία\""@el ;
+  rdfs:label "\"protection, protect\""@en ;
+  ontolex:representation "\"https://www.tegnsprog.dk/#%7Csoeg%7C'tekst'beskytte%7Cresultat%7C4%7Ctrestjerner%7C1%7Ctegn%7C837\"" ;
+  ontolex:writtenRep "<sigml><hns_sign gloss='FORSVARE'><hamnosys_manual><hamsymmlr/><hamfist/><hamparbegin/><hamextfingeru/><hampalmd/><hamplus/><hamextfingerr/><hampalmr/><hamparend/><hamparbegin/><hammoveu/><hamthumbside/><hamtouch/><hamplus/><hamnomotion/><hamparend/><hamrepeatfromstart/></hamnosys_manual></hns_sign></sigml>\" {hamnosys-sigml}" ;
+.
+dts:GLOSS_dts-1_2162
+  rdf:type sl:GLOSS ;
+  rdfs:label "\"FORSVARE\""@da ;
+  rdfs:label "\"PROTEGER\""@fr ;
+  rdfs:label "\"SCHUTZ1A^\""@de ;
+  rdfs:label "\"protect(v)#1\""@en ;
+  rdfs:label "\"ΠΡΟΣΤΑΤΕΥΩ\""@el ;
+.
+dts:LexicalEntry_1_2162
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"Schutz, schützen, geschützt\""@de ;
+  rdfs:label "\"forsvare, beskytte, værne, værn, beskyttelse\""@da ;
+  rdfs:label "\"protection\""@en ;
+  ontolex:evokes wnid:omw-00817680-n ;
+  ontolex:lexicalForm dts:Form_1_2162 ;
+.
+<http://example.org/dts#SignVideos_dts-t_2162.mp4>
+  rdf:type sl:SignVideos ;
+  dgs:hasGLOSS dts:GLOSS_dts-1_2162 ;
+  sl:hasVideoAdresss "https://www.tegnsprog.dk/video/t/t_2162.mp4"^^rdf:HTML ;
+  rdfs:label "\"Videos representing a sign\"" ;
+.
+frac:Corpus
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+frac:Observable
+  rdf:type owl:Class ;
+  rdfs:subClassOf owl:Thing ;
+.
+gsl:Form_1050
+  rdf:type ontolex:Form ;
+  <http://example.org/slhasTranscriptionEquivalent> "\"έκρηξη\""@en ;
+  rdfs:label "\"Explosion\""@en ;
+  rdfs:label "\"έκρηξη\""@el ;
+  ontolex:representation "\"HamNoSys-1050\"" ;
+.
+gsl:Form_688
+  rdf:type ontolex:Form ;
+  sl:hasVideoAdresss "https://www.sign-lang.uni-hamburg.de/dicta-sign/portal/concepts/gsl/688.mp4"^^rdf:HTML ;
+  <http://example.org/slhasTranscriptionEquivalent> "\"προστασία\""@el ;
+  rdfs:label "\"Schutz\""@de ;
+  rdfs:label "\"protection\""@en ;
+  rdfs:label "\"προστασία\""@el ;
+  ontolex:representation "\"HamNoSys-688\"" ;
+.
+gsl:LexicalEntry_1050
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"έκρηξη\""@el ;
+  ontolex:evokes wnid:omw-00377364-n ;
+  ontolex:lexicalForm gsl:Form_1050 ;
+  ontolex:sense gsl:LexicalSense_1050 ;
+.
+gsl:LexicalEntry_688
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"προστασία\""@el ;
+  ontolex:evokes wnid:omw-00817680-n ;
+  ontolex:lexicalForm gsl:Form_1050 ;
+.
+gsl:LexicalSense_1050
+  rdf:type ontolex:LexicalSense ;
+  rdfs:label "\"έκρηξη, σκάσιμο\""@el ;
+  ontolex:isLexicalizedSenseOf wnid:omw-00377364-n ;
+  ontolex:isSenseOf gsl:LexicalEntry_1050 ;
+  vartrans:translation dgs:LexicalSense_15584-10040 ;
+.
+gsl:LexicalSense_688
+  rdf:type ontolex:LexicalSense ;
+  rdfs:label "\"προστασία\""@el ;
+  ontolex:isLexicalizedSenseOf wnid:omw-00817680-n ;
+  ontolex:isSenseOf gsl:LexicalEntry_688 ;
+.
+lsf:LexicalEntry_668-n
+  rdf:type ontolex:LexicalEntry ;
+  rdfs:label "\"protéger\""@fr ;
+  ontolex:evokes wnid:omw-04228215-n ;
+  ontolex:lexicalForm gsl:Form_1050 ;
+.
+<http://example.org/sl>
+  rdf:type owl:Ontology ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://purl.org/dc/terms/> ;
+  owl:imports <http://www.w3.org/2002/07/owl> ;
+  owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/ns/lemon/lexicog> ;
+  owl:imports <http://www.w3.org/ns/lemon/lime> ;
+  owl:imports <http://www.w3.org/ns/lemon/ontolex> ;
+  owl:imports <http://www.w3.org/ns/lemon/synsem> ;
+  owl:imports <http://www.w3.org/ns/lemon/vartrans> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+sl:ConceptSet_Dicta-Sign
+  rdf:type ontolex:ConceptSet ;
+  rdfs:label "\"The list of 1000 concepts present in Dicta-Sign (https://www.sign-lang.uni-hamburg.de/dicta-sign/portal/) \""@en ;
+  lime:language "de"^^xsd:language ;
+  lime:language "el"^^xsd:language ;
+  lime:language "en"^^xsd:language ;
+  lime:language "fr"^^xsd:language ;
+.
+sl:ConceptSet_OMW-DGS
+  rdf:type ontolex:ConceptSet ;
+  rdfs:label "\"OMW for English and Greek as used by DGS\""@en ;
+  skos:member wnid:omw-00377364-n ;
+  skos:member wnid:omw-00817680-n ;
+  skos:member wnid:omw-01131902-v ;
+  skos:member wnid:omw-07376257-n ;
+  lime:language "ell"^^xsd:language ;
+  lime:language "eng"^^xsd:language ;
+.
+sl:ConceptSet_OMW-FR
+  rdf:type ontolex:ConceptSet ;
+  rdfs:label "\"OMW - French\""@en ;
+  lime:language "fr"^^xsd:language ;
+.
+sl:GLOSS
+  rdf:type owl:Class ;
+  rdfs:label "\"Gloss tagging of videos, which can be linked to various lexicalisations\""@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+sl:SignVideos
+  rdf:type owl:Class ;
+  rdfs:label "\"Videos representing a sign\"" ;
+  rdfs:subClassOf owl:Thing ;
+.
+sl:hasGloss
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain dgs:Type ;
+  rdfs:domain ontolex:Form ;
+  rdfs:label "\"associating a GLOSS with a type or subtype of a sign\""@en ;
+.
+sl:hasTranslationInSpokenLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "\"Glosses tagging a sign in a SL corpus\""@en ;
+.
+sl:hasVideoAdresss
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain sl:SignVideos ;
+  rdfs:label "\"Pointing to the url of a video associated with a sign type\""@en ;
+  rdfs:range rdf:HTML ;
+.
+sl:hasWnLemma
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain ontolex:LexicalConcept ;
+  rdfs:label "\"giving the lemma(s), for each language, associated with the wnid of omw\""@en ;
+.
+wnid:omw-00377364-n
+  rdf:type ontolex:LexicalConcept ;
+  sl:hasGloss "EXPLOSION1-CIRCUMFLEX"@en ;
+  sl:hasWnLemma "\"burst\""@en ;
+  sl:hasWnLemma "\"explosion\""@en ;
+  sl:hasWnLemma "\"έκρηξη\""@el ;
+  sl:hasWnLemma "\"σκάσιμο\""@el ;
+  rdfs:label "\"Explosion, platzen, Knall\""@de ;
+  rdfs:label "\"explosion, burst, bang\""@en ;
+  rdfs:label "\"έκρηξη,σκάσιμο\""@el ;
+  skos:inScheme sl:ConceptSet_OMW-DGS ;
+  ontolex:isEvokedBy dgs:LexicalEntry_15584-10040 ;
+  ontolex:isEvokedBy dgs:LexicalEntry_15584-10040_1 ;
+  ontolex:isEvokedBy gsl:LexicalEntry_1050 ;
+  ontolex:lexicalizedSense dgs:LexicalSense_15584-10040 ;
+  wn:definition [
+      rdf:value "The Greek definition taken from OMW" ;
+      rdf:value "lη ενέργεια του εκρήγνυται ή σκάει κάτι"@el ;
+      rdf:value "the English definition taken from Princeton WordNet" ;
+      rdf:value "the act of exploding or bursting"@en ;
+    ] ;
+.
+wnid:omw-00817680-n
+  rdf:type ontolex:LexicalConcept ;
+  sl:hasWnLemma "\"beskyttelse\""@da ;
+  sl:hasWnLemma "\"forsorg\""@da ;
+  sl:hasWnLemma "\"forsvar\""@da ;
+  sl:hasWnLemma "\"protection\""@en ;
+  sl:hasWnLemma "\"protection\""@fr ;
+  sl:hasWnLemma "\"værn\""@da ;
+  sl:hasWnLemma "\"προστασία\""@el ;
+  rdfs:label "\"Schutz\""@de ;
+  rdfs:label "\"beskyttelse\""@da ;
+  rdfs:label "\"protection\""@en ;
+  rdfs:label "\"protection\""@fr ;
+  rdfs:label "\"προστασία\""@el ;
+  skos:definition "\"παρεχόμενη φροντίδα σε κάποιον ώστε να προφυλάσσεται από υπαρκτούς ή διάφορους πιθανούς κινδύνους\""@el ;
+  skos:inScheme sl:ConceptSet_OMW-DGS ;
+  wn:definition <http://wordnetweb.princeton.edu/perl/webwn?o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&s=protection&i=0&h=0000000#c> ;
+.
+wnid:omw-01131902-v
+  rdf:type ontolex:LexicalConcept ;
+  rdfs:label "\"bomb, bombard\""@en ;
+  rdfs:label "\"bomben, bombardierenl\""@de ;
+  skos:inScheme sl:ConceptSet_OMW-DGS ;
+  ontolex:isEvokedBy dgs:LexicalEntry_15584-5466 ;
+  wn:definition [
+      rdf:value "The Greek definition taken from OMW" ;
+      rdf:value "lη ενέργεια του εκρήγνυται ή σκάει κάτι"@el ;
+      rdf:value "the English definition taken from Princeton WordNet" ;
+      rdf:value "the act of exploding or bursting"@en ;
+    ] ;
+.
+wnid:omw-02733122-v
+  rdf:type ontolex:LexicalConcept ;
+  sl:hasGloss "PROTEGER"@fr ;
+  sl:hasWnLemma "\"protéger\""@fr ;
+  rdfs:label "\"protéger\""@fr ;
+  skos:inScheme sl:ConceptSet_OMW-FR ;
+.
+wnid:omw-04228215-n
+  rdf:type ontolex:LexicalConcept ;
+  sl:hasGloss "PROTEGER"@fr ;
+  sl:hasWnLemma "\"protéger\""@fr ;
+  rdfs:label "\"protéger\""@fr ;
+  skos:inScheme sl:ConceptSet_OMW-FR ;
+.
+wnid:omw-07376257-n
+  rdf:type ontolex:LexicalConcept ;
+  sl:hasWnLemma "\"bang, clap, eruption, blast, bam\""@en ;
+  rdfs:label "\"bang, clap, eruption, blast, bam\""@en ;
+  skos:inScheme sl:ConceptSet_OMW-DGS ;
+  wn:definition <http://wordnetweb.princeton.edu/perl/webwn?o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&s=bang&i=1&h=000000000000#c> ;
+.
